@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ArticaleView">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/home_background1_jpeg"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="Articale"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="45dp"
+        android:layout_height="27dp"
+        android:layout_above="@+id/listviewDD"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/back_arrow_4" />
+
+    <ScrollView
+        android:id="@+id/listviewDD"
+        android:layout_width="match_parent"
+        android:layout_height="853dp"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="-18dp"
+        tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Title"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/articlesview"
+                android:layout_width="390dp"
+                android:layout_height="750dp"
+                android:layout_marginTop="10dp"
+                tools:srcCompat="@drawable/theimportanceofregulartirerotation"
+                android:layout_gravity="center"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"></TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

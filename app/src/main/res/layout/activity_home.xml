@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/home_background1_jpeg"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageButton12"
+        android:layout_width="68dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="330dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+
+
+
+    <ScrollView
+        android:id="@+id/listviewDD"
+        android:layout_width="match_parent"
+        android:layout_height="853dp"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="-30dp"
+        tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Title"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/service_centers"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#030D43"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="30dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Service Centers"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"></TextView>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Health_CheckUp"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#030D43"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Car CheckUp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Maintenance_Tips"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#030D43"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Maintenance Tips"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Car_Accessories"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#030D43"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Buy Accessories"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Car_Articles"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#030D43"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Car Articles"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/My_Cart"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#030D43"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="My Order"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myappointment"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#030D43"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="My Appointment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="50dp"></TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
